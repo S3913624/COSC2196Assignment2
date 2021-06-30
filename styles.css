@@ -1,0 +1,22 @@
+body {
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.header{
+    background: cyan;
+    text-align: center;
+    padding: 20px;
+}
+
+.details{
+    width: 84%;
+    padding-right: 10px;
+}
+
+
+.contents{
+    background-color: cyan;
+    padding: 30px;
+    margin-top: 20px;
+}
