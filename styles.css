@@ -9,14 +9,37 @@ body {
     padding: 20px;
 }
 
+.header a {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer{
+    background: cyan;
+    text-align: center;
+    padding: 40px;
+}
+
+.footer a {
+    float: right;
+    font-size: 22px;
+}
+
 .details{
     width: 84%;
     padding-right: 10px;
 }
 
-
 .contents{
     background-color: cyan;
     padding: 30px;
     margin-top: 20px;
+}
+
+.contents h1{
+    text-align: center;
+}
+
+.contents p{
+    font-size:22px;
 }
