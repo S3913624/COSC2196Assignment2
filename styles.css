@@ -1,33 +1,39 @@
 body {
     background-color: cadetblue;
     padding: 20px;
+    font-family: calibri;
 }
 
 .header{
     background: cyan;
     text-align: center;
     padding: 20px;
+    font-family: calibri;
 }
 
 .header a {
     text-align: center;
     padding: 10px;
+    font-family: calibri;
 }
 
 .footer{
     background: cyan;
     text-align: center;
     padding: 40px;
+    font-family: calibri;
 }
 
 .footer a {
     float: right;
     font-size: 22px;
+    font-family: calibri;
 }
 
 .details{
     width: 84%;
     padding-right: 10px;
+    font-family: calibri;
 }
 
 .contents{
@@ -38,8 +44,10 @@ body {
 
 .contents h1{
     text-align: center;
+    font-family: calibri;
 }
 
 .contents p{
     font-size:22px;
+    font-family: calibri;
 }
