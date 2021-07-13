@@ -40,14 +40,67 @@
 
   <HR>  
 
-  <h3>
+  <h1>
     Project Idea
-  </h3>
+  </h1>
+
+  <h4>The Group Consensus</h4>
+  <p>Individually, each team member had some very interesting project ideas. Some were broad, such as the game development project, and some were incredibly specific, such as the resistance to temperature conversion phone app project. Each project idea was presented articulately and clearly, and each had merits and deficiencies. It was expected to be the toughest decision for the group, and we were not wrong. The group concluded to wait until feedback was made available from Assignment One to help the decision-making process.</p>
+  <p>Ultimately it was decided based on assignment feedback, the projects clarity of vision, practicality, feasibility, possibility of expansion, and how niche the application would be. Despite initial hesitancy given a complete lack of exposure and understanding to the field (bar one student), the group decided on the resistance to temperature calculator app. Perhaps we will all learn something throughout the process other than IT?</p>
+
+  <h4>Overview</h4>
+  <p>Broadly speaking, the idea is to create a calculator application that will ultimately be available for android and apple devices. This app will have a very specific, set function and set formula. The aim will be to enable the user to input a numerical value which outputs a different numerical value based on an internationally defined equation. This explanation was essentially how the group was swayed on the idea, because the reason one would use the app, and the relevancy of the values themselves is not overly meaningful to the layman.</p>
+  <p>Specifically, the app would be aimed at metrologists and users of metrology equipment such as instrumentation technicians in the mining, oil and gas industries, and calibration technicians in the field or in laboratories. To focus the idea, it is to create a calculation app available on android or apple devices, that will mathematically convert a temperature sensor signal value (electrical resistance or millivolt depending on the sensor type) to its corresponding temperature value in either degrees Kelvin, Celsius or Fahrenheit, based on the International Temperature Scale of 1990 (ITS-90).</p>
+  <p>This is the part that most of the group were not comfortable with, and their hesitancy is completely understandable. They have been commended for endeavouring to undertake a project completely outside of their comfort zone but have been assured that focusing on the function and numbers, rather than the meaning will help them. In this way it will ensure more is learnt about the technologies used through the making of the app, rather than the industry or field the app would be used in. There is an assurance as well that to begin with, the group would aim to focus on only one formula in order to prove concept and function, despite the fact that there are many more formulas, and even more so, the possibility to use different coefficients of the formulas that can be applied to the calculation. All of this would require different datasets and programming skills which the group is excited to develop. </p>
+
+  <h4>Motive</h4>
+  <p>The mining, oil and gas industry the app would be geared towards is high-risk vs. high-reward. That is not to say this is the only applicable scenario of use though. The reason for measuring something in the first place, be it temperature, pressure, flow, or humidity, is entirely to make a decision based on the result. If one cannot determine if the measuring equipment is suitable for use, then the result is not credible, and a decision should not be made.</p>
+  <p>As an example, the average artificial incubation temperature for snake eggs is between 25.5°C and 28.9°C. Only a few tenths of a degree of error can mean the difference between fully developed snakes, stunted growth, or even death. Because snakes fetch reasonably high prices and require commitment of up to 60 days of incubation, this industry is considered high-risk vs. high-reward, and there have been instances where the manufacturer of what turned out to be a faulty sensor was threatened with a civil lawsuit. Had the equipment been determined suitable for use, perhaps the snakes would not have passed, and financial damage including litigation could have been avoided altogether.</p>
+  <p>Regrettably, there are very few resources for non-metrologists when it comes to converting a sensor signal and applying that measurement to an accuracy tolerance. It is a demanding field to be exposed to requiring many years of hands-on experience, training, and study. It is therefore the intention of this project to help general users of metrological equipment determine the suitability of a measuring device and thus, make an educated decision.</p>
+
+  <h4>Description</h4>
+  <p>The app can be best described with an example. Consider an instrumentation technician working for Ampol Australia in Queensland, or Chevron Corporation in Western Australia. Their current task is to perform a routine inspection on a temperature sensor that for all intents and purposes, appears to be functioning according to the logic control system the sensor is connected to.</p>
+  <p>The instrument tech knows the process temperature is 0°C and using his standard issue multimeter that all technicians and electricians have, measures 101Ω. The tech types this value into the app, the app converts this measured resistance based on a defined mathematical formula, and displays 2.5°C. the user inputs the reference temperature of 0°C and the app confirms the temperature sensor is outside allowable tolerances in accordance with the appropriate international standard. The technician is then required by internal policy to take this piece of equipment out of service, and immediately replace with a newly calibrated unit.</p>
+  <p>To simplify:
+        <ul>
+            <li>The user has a temperature sensor that they have measured the electrical signal of. The user would do this using standard, readily available industrial equipment such as a multimeter.</li>
+            <li>The user needs to convert this signal into a meaningful temperature value, perhaps to confirm the sensor is functioning appropriately.</li>
+            <li>The user will type the measured electrical signal into the app, and the app mathematically converts this signal into a meaningful temperature, displaying it proudly on the users screen.</li>
+            <li>If a reference temperature or known temperature is available, the user can input this too, and the app will compare the reference temperature to the sensor measurement. The app will advise the user of the applicable tolerance for that sensor and will advise the user with an on-screen alert if deemed outside the nominated tolerance.</li></ul>
+
+            <p>Insert diagram from pdf here</p>
+
+            <p>The application will be simple and ideally very intuitive with few options for the user to require any input, but the mathematics is too complex for the average user to simply use an ordinary calculator.
+                <p>As an example, the formula for converting temperature to resistance as defined by the international IEC 60751 standard is: Rt = R0[1+At+Bt2+C(t-100)t3]</p>
+                <p>where</p>
+                <ul>
+                    <li>Rt is resistance at the known temperature </li>
+                    <li>R0 is resistance at zero degrees Celsius </li>
+                    <li>A is a predefined coefficient depending on a sensor type </li>
+                    <li>B is a predefined coefficient depending on a sensor type </li>
+                    <li>C is a predefined coefficient depending on a sensor type </li>
+                    <li>t is the known temperature </li></ul>
+
+            <p>This formula is not too difficult to comprehend and reasonably easy to calculate, but the aim is not to solve temperature to resistance, but resistance to temperature! we must reverse the equality to isolate t, which results in an equation two pages long and gives us four separate answers. This is not a task even the most seasoned metrologists would consider performing, and therefore justifies the necessity of the app.</p>        
+
+    <h4>Tools, Technologies and Skills</h4>        
+        <p>Based on the original proposal from Assignment one, being a simple calculation app, there would have been very few resources required. For prototypical development, a basic computer would have been necessary in order to create the app, along with a smartphone to test the app. The development team would have initially only needed to comprise of a single person who both understands the mathematics and can apply it to already available programs. Given its powerful formula and mathematical features, Microsoft excel was the proposed tool to develop the prototype calculation. It was expected to prove the calculation works, isolate the correct single of four possible results of the aforementioned equation, and help to organize the layout and format of the app.</p>
+        <p>Excels compatibility with the browser-based app creation tool, which turns complicated spreadsheets or databases into phone apps, was another reason for selection. OpenAsApp claimed to be able to incorporate all the logic, formulas and charts of a spreadsheet automatically and turn it into an intuitive, neat and dynamic app.</p>
+        <p>The other reason to use Microsoft Excel is because it is completely compatible with OpenAsApp. OpenAsApp is a browser-based app creation tool which turns complicated spreadsheets or databases into apps. OpenAsApp claims to be able to incorporate all the logic, formulas, and charts of a spreadsheet automatically and turn it into an intuitive, neat, and dynamic app. The app can then be published and shared. </p>
+        <p>https://www.openasapp.com/</p>
+        <p>This is still an option to explore, but based on the feedback comments from Assignment one, the group endeavour to explore alternatives to OpenAsApp and Excel that “incorporate more IT solutions”. As per the feedback, Excel and OpenAsApp were said to be satisfactory for the prototype, but there was concern that there will not be much to work on as a team if this avenue were the ultimate direction. The group agree, including the original author of Assignment One.</p>
+        <p>Given this feedback, and with the inclusion of several members to the group with programming and app development experience, it is not unfeasible to completely develop some semblance of a publishable app. Several members are familiar with Android Studio, which provides tools for building apps on every type of android device. It has a visual layout editor which will help the team visualise the project.</p>
+        <p>https://developer.android.com/studio </p>
+        <p>Another method discussed in the bi-weekly team meetings was to investigate Quasar, which is an open-source framework based on Vue.js 3 (JavaScript) and is a progressive interface for building user interfaces. It will allow the group to create a responsive app that will build for Chrome PWA, Android WebFrame, iOS, and Electron.</p>
+        <p>https://quasar.dev/</p>
+        <p>Whatever direction the group decide on, a GitHub repo has already been created to accommodate communal work. A direct quote from Assignment 1: “It is predicted the project will likely stall… as it would require a software engineer who can understand the mathematics. It would be preferential to learn to do this myself.” It appears the original authors concerns may no longer be valid, and the team is excited to begin.</p>
+
+    <h4>Outcome</h4>
+                    <p>The project from assignment one was not expected to have a grand impact on the world and was not expected to contain any innovative bit of software or code. It has yet to be seen that this factor will change, but since becoming a group task, learning about the professional process of developing an app and working together as a group is considered the ultimate goal.</p>
+                    <p>It will be grand however in that it will allow the average user of metrological equipment to easily understand what they’re using and make an appropriate decision. Although the project seems to be targeted at a relatively niche market, temperature is the most commonly measured physical quantity. Temperature is related to all other physical properties, i.e., the pressure in a vessel changes depending on the temperature. The length of an object changes depending on the temperature. The humidity in a chamber changes depending on the temperature. From snake hatching to mining, it’s important to measure correctly. The aim is to help do that, and learn something along the way.</p>
 
 
-
-
-  
+                    
   <p style=text-align:center;>
     <a href="https://s3913624.github.io/COSC2196Assignment2/index.html">Home</a>&emsp;&emsp;
     <a href="https://s3913624.github.io/COSC2196Assignment2/GroupReflection.html">Next page</a>&emsp;&emsp;
