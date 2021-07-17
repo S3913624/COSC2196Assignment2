@@ -27,7 +27,6 @@ h4 {
   font-family: calibri;
   color:#2F5496;
   font-size:20px;
-  margin-right:25%;
   margin-left:25%;
 }
 
@@ -49,6 +48,10 @@ p {
   margin-left:25%;
 }
 
+table {
+  padding-left: 12%;
+  padding-right: 15%;
+}
 
 td {
   font-family: calibri;
