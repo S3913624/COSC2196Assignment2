@@ -73,3 +73,14 @@ HR {
 .center{
   width: 100%;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(6, 115, 187);
+    color: white;
+    text-align: center;
+    font-family: calibri;
+ }
